@@ -117,7 +117,7 @@ function YourAgent() {
     var AgentRandom = Agents[Random]
     if(SelectedAgents.includes(AgentRandom) == true){
         document.getElementById("TheEnd").innerHTML = AgentRandom;
-        document.getElementById("picture").src = `../assets/agent/fullscale/${AgentRandom}.png`
+        document.getElementById("picture").src = `assets/agent/fullscale/${AgentRandom}.png`
         console.log(SelectedAgents)
     } else {
         AgentRandom = Agents[Random]
