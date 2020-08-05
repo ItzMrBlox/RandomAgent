@@ -1,4 +1,4 @@
-const Agents = ["Breach", "Brimstone", "Cypher", "Jett", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Sova", "Viper"]
+const Agents = ["Breach", "Brimstone", "Cypher", "Jett", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Sova", "Viper", "Killjoy"]
 var SelectedAgents = []
 
 
@@ -112,6 +112,16 @@ if(document.getElementById('viper').className === 'picked'){
 }
 }
 
+function Killjoy(){
+    if(document.getElementById('killjoy').className === 'picked'){
+        document.getElementById('killjoy').classList.remove('picked');
+        SelectedAgents[11] = ""
+    } else {
+        document.getElementById('killjoy').className = 'picked'
+        SelectedAgents[11] = "Killjoy"
+    }
+    }
+
 function YourAgent() {
     var Random = Math.floor(Math.random() * Agents.length);
     var AgentRandom = Agents[Random]
@@ -126,16 +136,8 @@ function YourAgent() {
 }
 
 function SelectAll(){
-    document.getElementById('breach').className = 'picked'
-    document.getElementById('brimstone').className = 'picked'
-    document.getElementById('cypher').className = 'picked'
-    document.getElementById('jett').className = 'picked'
-    document.getElementById('omen').className = 'picked'
-    document.getElementById('phoenix').className = 'picked'
-    document.getElementById('raze').className = 'picked'
-    document.getElementById('reyna').className = 'picked'
-    document.getElementById('sage').className = 'picked'
-    document.getElementById('sova').className = 'picked'
-    document.getElementById('viper').className = 'picked'
-    SelectedAgents = ["Breach", "Brimstone", "Cypher", "Jett", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Sova", "Viper"]
+    for (let i = 0; i < Agents.length; i++) {
+        document.getElementById(Agents[i].toLowerCase()).className = 'picked'
+    }
+    SelectedAgents = Agents
 }
