@@ -1,6 +1,5 @@
 const Agents = ["Breach", "Brimstone", "Cypher", "Jett", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Sova", "Viper", "Killjoy"]
 var SelectedAgents = []
-localStorage.setItem("Picks");
 
 function Load(){
     AlreadyPicked()
@@ -32,6 +31,10 @@ function YourAgent() {
 }
 
 function AlreadyPicked(){
+    if (localStorage.getItem("Picks") === null){
+        localStorage.setItem("Picks", JSON.stringify(SelectedAgents));
+    } else {
+    }
     SelectedAgents = JSON.parse(localStorage.getItem("Picks"));
     let AgentsImages = document.querySelectorAll(".PickYourAgent img");
     for (let i = 0; i < Agents.length; i++) {
