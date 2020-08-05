@@ -1,5 +1,6 @@
 const Agents = ["Breach", "Brimstone", "Cypher", "Jett", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Sova", "Viper", "Killjoy"]
 var SelectedAgents = []
+   var all = false;
 
 
 function Breach(){
@@ -125,19 +126,30 @@ function Killjoy(){
 function YourAgent() {
     var Random = Math.floor(Math.random() * Agents.length);
     var AgentRandom = Agents[Random]
-    if(SelectedAgents.includes(AgentRandom) == true){
+    if(SelectedAgents.includes(AgentRandom) == true && AgentRandom != ""){
         document.getElementById("TheEnd").innerHTML = AgentRandom;
         document.getElementById("picture").src = `assets/agent/fullscale/${AgentRandom.toLowerCase()}.png`
-        console.log(SelectedAgents)
     } else {
-        AgentRandom = Agents[Random]
         return YourAgent()
     }
 }
 
 function SelectAll(){
-    for (let i = 0; i < Agents.length; i++) {
-        document.getElementById(Agents[i].toLowerCase()).className = 'picked'
+    if(all == false){
+        document.getElementById('selectall').innerHTML = 'Unselect All'
+        document.getElementById('selectall').classList.add('notall');
+        for (let i = 0; i < Agents.length; i++) {
+            document.getElementById(Agents[i].toLowerCase()).className = 'picked'
+        }
+        SelectedAgents = Agents
+        all = true
+    } else {
+        document.getElementById('selectall').innerHTML = 'Select All'
+        document.getElementById('selectall').classList.remove('notall');
+        for (let i = 0; i < Agents.length; i++) {
+            document.getElementById(Agents[i].toLowerCase()).classList.remove('picked');
+        }
+        all = false
+        SelectedAgents = []
     }
-    SelectedAgents = Agents
 }

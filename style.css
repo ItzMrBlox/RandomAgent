@@ -92,7 +92,7 @@ body {
     cursor: pointer;
     background-color: rgb(134, 134, 134);
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 0.3s;
 
 }
 
@@ -105,14 +105,29 @@ body {
 }
 
 .all {
-    position: absolute;
     margin-top: 2vh;
-    margin-left: 46%;
+    margin-left: 44.2vw;
     text-align: center;
+    width: 8vw;
     font-size: 20px;
     font-weight: 600;
     color: white;
     background-color: green;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.notall {
+    background-color: red;
+    margin-top: 2vh;
+    margin-left: 44.2vw;
+    text-align: center;
+    width: 8vw;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
     padding: 7px;
     border-radius: 10px;
     cursor: pointer;
