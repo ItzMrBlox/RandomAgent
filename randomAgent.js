@@ -22,8 +22,8 @@ function YourAgent() {
     var Random = Math.floor(Math.random() * Agents.length);
     var AgentRandom = Agents[Random]
     if(SelectedAgents.includes(AgentRandom) == true && AgentRandom != ""){
-        document.getElementById("TheEnd").innerHTML = AgentRandom;
         document.getElementById("picture").src = `assets/agent/fullscale/${AgentRandom.toLowerCase()}.png`
+        document.getElementById("TheEnd").innerHTML = AgentRandom;
         console.log(`You got ${AgentRandom}!`)
     } else {
         return YourAgent()
