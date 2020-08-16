@@ -1,4 +1,4 @@
-const Agents = ["Breach", "Brimstone", "Cypher", "Jett", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Sova", "Viper", "Killjoy"]
+const Agents = ["Breach", "Brimstone", "Cypher", "Jett", "Killjoy", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Sova", "Viper"]
 var SelectedAgents = []
 
 function Load(){
