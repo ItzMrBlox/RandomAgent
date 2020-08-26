@@ -1,0 +1,41 @@
+{
+    "Sidearms": [
+        "Classic",
+        "Shorty",
+        "Frenzy",
+        "Ghost",
+        "Sheriff"
+    ],
+
+    "SMGS": [
+        "Stinger",
+        "Spectre"
+    ],
+
+    "Shotguns": [
+        "Bucky",
+        "Judge"
+    ],
+    
+    "Rifles": [
+        "Bulldog",
+        "Guardian",
+        "Phantom",
+        "Vandal"
+    ],
+
+    "Sniper Rifles": [
+        "Marshal",
+        "Operator"
+    ],
+
+    "Machine Guns": [
+        "Ares",
+        "Odin"
+    ],
+
+    "Armor": [
+        "Light Shields",
+        "Heavy Shields"
+    ]
+}
