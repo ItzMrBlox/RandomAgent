@@ -1,7 +1,44 @@
-var Arsenal = {};
-$.getJSON('../assets/map/Arsenal.json',function(data){
-    Arsenal = data;
-});
+var Arsenal = {
+    "Sidearms": [
+        "Classic",
+        "Shorty",
+        "Frenzy",
+        "Ghost",
+        "Sheriff"
+    ],
+
+    "SMGS": [
+        "Stinger",
+        "Spectre"
+    ],
+
+    "Shotguns": [
+        "Bucky",
+        "Judge"
+    ],
+    
+    "Rifles": [
+        "Bulldog",
+        "Guardian",
+        "Phantom",
+        "Vandal"
+    ],
+
+    "Sniper Rifles": [
+        "Marshal",
+        "Operator"
+    ],
+
+    "Machine Guns": [
+        "Ares",
+        "Odin"
+    ],
+
+    "Armor": [
+        "Light Shields",
+        "Heavy Shields"
+    ]
+}
 
 
 function Random(){

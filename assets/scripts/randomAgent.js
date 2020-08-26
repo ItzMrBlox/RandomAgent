@@ -1,7 +1,17 @@
-var Agents = {}
-$.getJSON('../assets/map/agents.json',function(data){
-    Agents = data.Agents;
-});
+var Agents = [
+    "Breach",
+    "Brimstone",
+    "Cypher",
+    "Jett",
+    "Killjoy",
+    "Omen",
+    "Phoenix",
+    "Raze",
+    "Reyna",
+    "Sage",
+    "Sova",
+    "Viper"
+]
 var SelectedAgents = []
 
 function Load(){
