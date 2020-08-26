@@ -1,2 +1,2 @@
 # Valorant Random
-It is a random agent picker for the game Valorant, and hopefully soon loadout.
+It is a random agent picker for the game Valorant, and random loadout.
