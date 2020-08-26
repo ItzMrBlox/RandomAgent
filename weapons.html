@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Random</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="..\assets\scripts\randomLoadout.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets\other\favicon.png" type="image/png">
+</head>
+<body>
+<div class="background"></div>  
+    <div class="topheader">
+        <img src="assets\other\favicon.png">
+        <h1>Valorant Random</h1>
+    </div>
+    <div class="buymenu">
+        <div class="Table" id="SideArmTable">
+            <p>Sidearm</p>
+            <div id="classic" class="EquipmentPicked"><img src="..\assets\weapons\classic.png"></div>
+            <div id="shorty"><img src="..\assets\weapons\shorty.png"></div>
+            <div id="frenzy"><img src="..\assets\weapons\frenzy.png"></div>
+            <div id="ghost"><img src="..\assets\weapons\ghost.png"></div>
+            <div id="sheriff"><img src="..\assets\weapons\sheriff.png"></div>
+        </div>
+        <div class="Table MainWeapon" style="margin-left: 35px;">
+            <p>SMGS</p>
+            <div id="stinger"><img src="..\assets\weapons\stinger.png"></div>
+            <div id="spectre"><img src="..\assets\weapons\spectre.png"></div>
+            <p>Shotguns</p>
+            <div id="bucky"><img src="..\assets\weapons\bucky.png"></div>
+            <div id="judge"><img src="..\assets\weapons\judge.png"></div>
+        </div>
+        <div class="Table tableRifle MainWeapon" style="margin-left: 5px;">
+            <p>Rifles</p>
+            <div id="bulldog"><img src="..\assets\weapons\bulldog.png"></div>
+            <div id="guardian"><img src="..\assets\weapons\guardian.png"></div>
+            <div id="phantom"><img src="..\assets\weapons\phantom.png"></div>
+            <div id="vandal"><img src="..\assets\weapons\vandal.png"></div>
+        </div>
+        <div class="Table MainWeapon" style="margin-left: 5px;">
+            <p>Sniper Rifles</p>
+            <div id="marshal"><img src="..\assets\weapons\marshal.png"></div>
+            <div id="operator"><img src="..\assets\weapons\operator.png"></div>
+            <p>Machine Guns</p>
+            <div id="ares"><img src="..\assets\weapons\ares.png" style="width:85%"></div>
+            <div id="odin"><img src="..\assets\weapons\odin.png"></div>
+        </div>
+        <div class="Table TableShield" style="margin-left: 35px;">
+            <p>Armor</p>
+            <div id="lightshield"><img src="..\assets\weapons\lightshields.png"></div>
+            <div id="heavyshield"><img src="..\assets\weapons\heavyshields.png"></div>
+        </div>
+    </div>
+    <button class="RandomLoadout" onclick="Random()">Random Loadout</button>
+
+    <div class="footer">
+        <a href="weapons.html">Random Weapons</a>
+        <a href="index.html">Random Agents</a>
+    </div>
+</body>
+</html>
