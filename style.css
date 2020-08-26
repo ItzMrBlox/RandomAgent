@@ -27,6 +27,7 @@ body {
     background: black;
     padding: 1vh;
     user-select: none;
+    color: white;
 }
 
 .topheader img {
@@ -37,6 +38,26 @@ body {
 
 .topheader h1 {
     font-size: 1.2vw;
+}
+
+.topheader .agents {
+    float: left;
+}
+
+.footer {
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer a {
     color: white;
 }
 
@@ -133,4 +154,94 @@ body {
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
+}
+
+.buymenu {
+    width: 50vw;
+    height: 50vh;
+    margin-left: 24vw;
+    margin-top: 10vh;
+    display: flex;
+}
+
+
+.Table {
+    width: 10vw;
+}
+
+.Table p {
+    background-color: #618f85;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    border-bottom: rgb(214, 214, 214) 3px solid;
+    padding: 2px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.Table p:not(:first-child) {
+    margin-top: 35%;
+}
+
+.Table div {
+    background-color: rgba(163, 163, 163, 0.40);
+    width: 10vw;
+    height: 10vh;
+    margin: 5px 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tableRifle div {
+    height: 12.55vh;
+    vertical-align: middle;
+}
+
+.tableRifle img {
+    margin-top: 15px !important;
+}
+
+.Table div img {
+    width: 80%;
+    filter: brightness(0) invert(1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.Table div::before {
+    content:  attr(id);
+    color: white;
+    text-transform: uppercase;
+}
+
+.TableShield div{
+    height: 25.5vh;
+}
+
+.TableShield img {
+    margin-top: 25px !important;
+}
+
+.EquipmentPicked {
+    background-color: #779F9B !important;
+    border: 2px solid #47FFBF;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.RandomLoadout {
+    background-color: green;
+    padding: 10px;
+    border: 2px green solid;
+    color: white;
+    font-weight: 600;
+    width: 10vw;
+    height: 7vh;
+    position: relative;
+    left: 45%;
+    margin-top: 5%;
 }
