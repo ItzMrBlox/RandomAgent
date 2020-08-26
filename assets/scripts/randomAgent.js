@@ -1,4 +1,7 @@
-const Agents = ["Breach", "Brimstone", "Cypher", "Jett", "Killjoy", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Sova", "Viper"]
+var Agents = {}
+$.getJSON('../assets/map/agents.json',function(data){
+    Agents = data.Agents;
+});
 var SelectedAgents = []
 
 function Load(){
